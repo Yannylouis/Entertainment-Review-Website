@@ -1,0 +1,162 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    background-color: #111827;
+    color: white;
+}
+/*Header*/
+header{
+    text-align: center;
+    background-color: #1f2937;
+    padding: 30px;
+}
+header h1{
+    margin: 0;
+    font-size: 40px;
+}
+header p{
+    font-size: 18px;
+}
+/*Navigation*/
+nav{
+    background-color: #0f172a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover{
+    color: #86efac;
+}
+
+/*Main Content*/
+main{
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+section{
+    margin-bottom: 30px;
+}
+
+/*Featured Section*/
+.featured-box{
+    display: flex;
+    gap: 30px;
+    background-color: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+}
+.featured-box img{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/*Button*/
+.button{
+    display: inline-block;
+    background-color: #166534;
+    color:white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*Featured Review*/
+.featured-review{
+    display: flex;
+    gap: 30px;
+    background-color: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+}
+.featured-review img{
+    width: 300px;
+    height: 420x;
+    object-fit: cover;
+}
+
+/*Review-cards*/
+.review-container{
+    display: flex;
+    gap: 20px;
+}
+
+.review-card{
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+    flex:1;
+}
+.review-container img{
+    width: 100px;
+    height: 250x;
+    object-fit: cover;
+}
+
+/*Contact*/
+.contact{
+    background-color: #1f2937;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+    textarea{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+textarea{
+    height: 100px;
+}
+
+button{
+    padding: 10px;
+    background-color: #166534;
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    background-color: #0f172a;
+    padding: 20px;
+}
+
+/*Responsive design*/
+@media(max-width:700px){
+    .featured-box
+    .featured-review
+    .review-container{
+        flex-direction: column;
+    }
+    .featured-box img,
+    .featured-review img {
+        width: 100%;
+        height: auto;
+    }
+    nav a{
+        display: block;
+        margin: 10px;
+    }
+}
+
+
+
+
+
